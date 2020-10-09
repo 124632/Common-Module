@@ -1,0 +1,14 @@
+driverManagerDataSource.url=jdbc:mysql://localhost:8081/hibernate
+driverManagerDataSource.name=root
+driverManagerDataSource.password=root123
+driverManagerDataSource.driverClassName=com.mysql.jdbc.Driver
+
+<hibernate-configuration>
+	<session-factory>
+			<property name="show_sql">true</property>
+		 <mapping class="main.java.com.xworkz.modules.entity.TempleEntity"/>
+		 <mapping class="main.java.com.xworkz.modules.entity.PersonalInfoEntity"/>
+			<mapping class="main.java.com.xworkz.modules.entity.VisitingInfoEntity"/>		
+	</session-factory>
+</hibernate-configuration>
+
